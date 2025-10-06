@@ -662,61 +662,86 @@
 
         </div>
         <!-- content end -->
-       <!-- Floating Contact Buttons -->
-<div class="social-float">
+      <!-- Floating Contact & Social Buttons -->
+<div class="contact-buttons">
   <!-- WhatsApp -->
-  <a href="https://wa.me/2348165539991?text=Hello%20I%20want%20to%20chat" target="_blank" class="social-btn whatsapp" aria-label="Chat on WhatsApp">
+  <a href="https://wa.me/2349025589011?text=Hello%20Bima%20Smile%20Dental%20Clinic" target="_blank" class="contact-btn whatsapp" aria-label="Chat on WhatsApp">
     <i class="fab fa-whatsapp"></i>
   </a>
 
+  <!-- Email -->
+  <a href="mailto:bimasmiledentalclinic@gmail.com" class="contact-btn email" aria-label="Send us an email">
+    <i class="fas fa-envelope"></i>
+  </a>
+
   <!-- Facebook -->
-  <a href="https://www.facebook.com/profile.php?id=61556254787673" target="_blank" class="social-btn facebook" aria-label="Visit our Facebook">
+  <a href="https://web.facebook.com/100066756193535/posts/bima-smile-dental-clinic-intl-have-a-beautiful-smile-with-our-special-eid-promo-/790788649823001/?_rdc=1&_rdr#" 
+     target="_blank" class="contact-btn facebook" aria-label="Visit our Facebook page">
     <i class="fab fa-facebook-f"></i>
   </a>
 
-  <!-- Email -->
-  <a href="mailto:ojoolakunle617@gmail.com" class="social-btn email" aria-label="Send us an email">
-    <i class="fas fa-envelope"></i>
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/bimasmiledentalclinic_intl/" target="_blank" class="contact-btn instagram" aria-label="Visit our Instagram profile">
+    <i class="fab fa-instagram"></i>
   </a>
 </div>
 
-<!-- Font Awesome for icons -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<!-- Font Awesome (for icons) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-  .social-float {
+  .contact-buttons {
     position: fixed;
     right: 18px;
     bottom: 18px;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 14px;
     z-index: 9999;
   }
 
-  .social-btn {
-    width: 44px;
-    height: 44px;
+  .contact-btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    font-size: 20px;
+    color: white;
     text-decoration: none;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.25);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-size: 22px;
+    box-shadow: 0 6px 0 rgba(0,0,0,0.25),
+                0 8px 15px rgba(0,0,0,0.2);
+    transition: all 0.25s ease-in-out;
   }
 
-  .social-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.35);
+  .contact-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 0 rgba(0,0,0,0.25),
+                0 12px 20px rgba(0,0,0,0.35);
   }
 
-  /* Brand colors */
-  .whatsapp { background-color: #25D366; }
-  .facebook { background-color: #1877F2; }
-  .email { background-color: #EA4335; } /* Gmail red */
+  /* Button Colors with 3D gradient look */
+  .whatsapp {
+    background: linear-gradient(145deg, #25D366, #1DA851);
+  }
+  .email {
+    background: linear-gradient(145deg, #FF9800, #E65100);
+  }
+  .facebook {
+    background: linear-gradient(145deg, #1877F2, #0F5BB5);
+  }
+  .instagram {
+    background: linear-gradient(145deg, #F58529, #DD2A7B, #8134AF);
+  }
+
+  @media (max-width: 600px) {
+    .contact-btn {
+      width: 45px;
+      height: 45px;
+      font-size: 20px;
+    }
+  }
 </style>
 
 
